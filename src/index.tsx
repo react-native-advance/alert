@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type AlertType = {
-  multiply(a: number, b: number): Promise<number>;
+  showMessage(title?: string, message?: string, duration?: number): void;
 };
 
 const { Alert } = NativeModules;
